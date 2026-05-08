@@ -1,0 +1,39 @@
+@font-face {
+  font-family: zekton;
+  src: url("../assets/fonts/zekton.otf");
+}
+
+.button {
+  margin-top: 30px;
+  width: 100%;
+  padding: 14px 0;
+  font-size: 20px;
+  font-weight: 700;
+  background: #fff;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0 0 12px rgba(0,0,0,0.6);
+  font-family: zekton, sans-serif;
+
+  background: 
+    repeating-linear-gradient(
+      0deg,
+      rgba(0,0,0,0.05) 0px,
+      rgba(0,0,0,0.05) 1px,
+      transparent 1px,
+      transparent 3px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      rgba(0,0,0,0.05) 0px,
+      rgba(0,0,0,0.05) 1px,
+      transparent 1px,
+      transparent 3px
+    ),
+    #fff;
+
+    box-shadow:
+    0 0 18px 6px rgba(0,0,0,0.3) inset,
+    0 0 12px 4px rgba(0,0,0,0.9);
+}

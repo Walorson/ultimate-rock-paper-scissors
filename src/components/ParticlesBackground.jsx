@@ -10,7 +10,7 @@ export default function ParticlesBackground() {
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
 
-    const icons = ["✂", "📄", "🪨"];
+    const icons = ["✂", "📄", "🔘"];
     const particles = [];
 
     function spawnParticle() {
