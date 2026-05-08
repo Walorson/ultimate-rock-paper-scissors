@@ -1,0 +1,17 @@
+.lightning {
+  position: absolute;
+  top: 13%;
+  left: 0;
+  z-index: 5;
+  filter: drop-shadow(0 0 8px rgba(255,255,255,0.7));
+  opacity: 0.8;
+  pointer-events: none;
+  width: 100%;
+}
+
+.lightning polyline {
+  stroke: rgba(166, 166, 166, 0.85);
+  stroke-width: 3;
+  fill: none;
+  transition: all 0.12s ease;
+}

@@ -1,0 +1,44 @@
+@font-face {
+  font-family: zekton;
+  src: url("../assets/fonts/zekton.otf");
+}
+
+.menu-btn {
+  width: 260px;
+  padding: 18px 0;
+  font-size: 22px;
+  font-weight: 700;
+  font-family: zekton, sans-serif;
+  background: 
+    repeating-linear-gradient(
+      0deg,
+      rgba(0,0,0,0.05) 0px,
+      rgba(0,0,0,0.05) 1px,
+      transparent 1px,
+      transparent 3px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      rgba(0,0,0,0.05) 0px,
+      rgba(0,0,0,0.05) 1px,
+      transparent 1px,
+      transparent 3px
+    ),
+    #fff;
+  
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: transform .15s ease;
+
+  box-shadow:
+    0 0 18px 6px rgba(0,0,0,0.3) inset,
+    0 0 12px 4px rgba(0,0,0,0.9);
+}
+
+/* hover — delikatne podniesienie */
+.menu-btn:hover {
+  transform: scale(1.04);
+}
