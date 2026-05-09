@@ -1,9 +1,12 @@
 .char-wrapper {
-  width: 100%;
+  width: 480px;
   text-align: center;
   padding-top: 40px;
   color: black;
   font-family: "Orbitron", sans-serif;
+  border: 3px solid black;
+  border-radius: 50px;
+  background-color: rgb(255, 248, 240);
 }
 
 .char-title {

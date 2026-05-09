@@ -1,0 +1,8 @@
+.game-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+    position: absolute;
+    inset: 0;
+}
