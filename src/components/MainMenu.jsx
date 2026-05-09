@@ -7,12 +7,12 @@ import MenuButton from "./MenuButton";
 import Logo from "./Logo";
 import Modal from "./Modal";
 
-export default function MainMenu() {
+export default function MainMenu({setView}) {
    const [showModal, setShowModal] = useState(false);
 
   return (
     <>
-       {showModal && <Modal onClose={() => setShowModal(false)} />}
+       {showModal && <Modal onClose={() => setShowModal(false)} setView={setView}/>}
 
       <div className="menu-wrapper">
 

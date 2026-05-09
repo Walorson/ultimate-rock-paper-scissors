@@ -1,7 +1,8 @@
 import Button from "./Button";
+import ModeCard from "./ModeCard";
 import "./Modal.css";
 
-export default function Modal({ onClose }) {
+export default function Modal({ onClose, setView }) {
   return (
     <div className="modal-overlay">
       <div className="modal-window">
@@ -9,20 +10,11 @@ export default function Modal({ onClose }) {
         <h2 className="modal-title">Choose Game Mode</h2>
 
         <div className="mode-cards">
-          <div className="mode-card">
-            <div className="img-placeholder"></div>
-            <span>Ultimate</span>
-          </div>
 
-          <div className="mode-card">
-            <div className="img-placeholder"></div>
-            <span>Half‑Ultimate</span>
-          </div>
+          <ModeCard title="Ultimate"></ModeCard>
+          <ModeCard title="Half‑Ultimate"></ModeCard>
+          <ModeCard title="Classic" setView={setView}></ModeCard>
 
-          <div className="mode-card">
-            <div className="img-placeholder"></div>
-            <span>Classic</span>
-          </div>
         </div>
 
         <Button onClick={onClose}>Close</Button>
