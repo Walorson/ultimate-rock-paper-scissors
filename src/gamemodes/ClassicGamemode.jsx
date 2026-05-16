@@ -1,4 +1,5 @@
 import CharacterSelect from "../components/CharacterSelect"
+import CharacterSelectEnemy from "../components/CharacterSelectEnemy"
 import "./game.css";
 import Timer from "../components/Timer"
 
@@ -8,7 +9,7 @@ const ClassicGamemode = () => {
             <div style={{width: "100px"}}></div>
             <CharacterSelect />
             <Timer />
-            <CharacterSelect />
+            <CharacterSelectEnemy />
             <div style={{width: "100px"}}></div>
         </div>
     )

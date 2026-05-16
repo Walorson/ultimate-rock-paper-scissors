@@ -18,8 +18,9 @@ export default function CharacterSelect() {
       <h2 className="char-title">CHOOSE YOUR FIGHTER</h2>
 
       <div className="char-container">
-        {classicChars.map(c => 
+        {classicChars.map((c, index) => 
           <CharComponent
+            key={index}
             char={c.name}
             hovered={hovered}
             setHovered={setHovered}

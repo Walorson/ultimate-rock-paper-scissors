@@ -7,6 +7,7 @@
   border: 3px solid black;
   border-radius: 50px;
   background-color: rgb(255, 248, 240);
+  min-height: 488px;
   user-select: none;
   -webkit-user-drag: none;
 }
