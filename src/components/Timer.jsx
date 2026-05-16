@@ -1,22 +1,6 @@
-import { useEffect, useState } from "react";
 import "./Timer.css";
 
-export default function Timer() {
-  const [time, setTime] = useState(8);
-
-  useEffect(() => {
-    if (time === 0) {
-      console.log("Dupa");
-      return;
-    }
-
-    const interval = setInterval(() => {
-      setTime((t) => t - 1);
-    }, 1000);
-
-    return () => clearInterval(interval);
-  }, [time]);
-
+export default function Timer({time}) {
   return (
     <div className="film-timer">
       <div className="film-circle">

@@ -1,9 +1,8 @@
 import { useState } from "react";
 import CharComponent from "./CharComponent";
 import "./CharacterSelect.css";
-import { classicChars } from "../Char";
 
-export default function CharacterSelect() {
+export default function CharacterSelect({chars}) {
   const [hovered, setHovered] = useState(null);
   const [chosen, setChosen] = useState(null);
 
@@ -11,14 +10,12 @@ export default function CharacterSelect() {
     if (!chosen) setChosen(id);
   };
 
-
-
   return (
     <div className="char-wrapper">
       <h2 className="char-title">CHOOSE YOUR FIGHTER</h2>
 
       <div className="char-container">
-        {classicChars.map((c, index) => 
+        {chars.map((c, index) => 
           <CharComponent
             key={index}
             char={c.name}
