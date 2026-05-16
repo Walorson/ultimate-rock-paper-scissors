@@ -4,7 +4,7 @@ import Timer from "../components/Timer"
 
 const ClassicGamemode = () => {
     return (
-        <div class="game-container">
+        <div className="game-container">
             <div style={{width: "100px"}}></div>
             <CharacterSelect />
             <Timer />

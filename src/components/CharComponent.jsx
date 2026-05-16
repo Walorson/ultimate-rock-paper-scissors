@@ -1,10 +1,10 @@
-import "./CharCircle.css";
+import "./CharComponent.css";
 
-function CharacterCircle({ char, setHovered, chosen, onChoose}) 
+function CharComponent({ char, setHovered, chosen, onChoose}) 
 {
   return (
     <div
-      className={`char-circle ${chosen ? "locked" : ""}`}
+      className={`char-component ${chosen ? "locked" : ""}`}
       onMouseEnter={() => !chosen && setHovered(char)}
       onMouseLeave={() => !chosen && setHovered(null)}
       onClick={() => onChoose(char)}
@@ -14,4 +14,4 @@ function CharacterCircle({ char, setHovered, chosen, onChoose})
   );
 }
 
-export default CharacterCircle;
+export default CharComponent;

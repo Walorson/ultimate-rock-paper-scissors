@@ -1,4 +1,4 @@
-.char-circle {
+.char-component {
   width: 140px;
   height: 140px;
   border-radius: 50%;
@@ -11,12 +11,12 @@
   transition: transform .2s ease, box-shadow .2s ease;
 }
 
-.char-circle:hover {
+.char-component:hover {
   transform: scale(1.1);
   box-shadow: 0 0 20px black;
 }
 
-.char-circle.locked {
+.char-component.locked {
   opacity: 0.4;
   cursor: default;
   transform: none;
