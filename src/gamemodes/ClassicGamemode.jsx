@@ -23,7 +23,7 @@ const ClassicGamemode = () => {
     return (
         <div className="game-container">
             <div style={{width: "100px"}}></div>
-            <CharacterSelect chars={classicChars} />
+            <CharacterSelect chars={classicChars} time={time} />
             <Timer time={time} />
             <CharacterSelectEnemy chars={classicChars} time={time} />
             <div style={{width: "100px"}}></div>

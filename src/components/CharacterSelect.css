@@ -10,6 +10,10 @@
   min-height: 488px;
   user-select: none;
   -webkit-user-drag: none;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .char-title {
