@@ -1,0 +1,33 @@
+.char-component {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  background: white;
+  border: 6px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.char-component:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px black;
+}
+
+.char-component.locked {
+  opacity: 0.4;
+  cursor: default;
+  transform: none;
+  box-shadow: none;
+}
+
+.char-inner {
+  font-size: 48px;
+  font-weight: 900;
+}
+
+.char-inner img {
+    height: 50px;
+}
