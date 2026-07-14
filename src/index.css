@@ -20,3 +20,8 @@ body::before {
   box-shadow: 0 0 120px 60px rgba(0,0,0,0.9) inset;
   z-index: 5;
 }
+
+a {
+  text-decoration: none;
+  color: initial;
+}

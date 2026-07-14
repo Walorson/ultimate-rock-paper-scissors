@@ -2,14 +2,14 @@ import "./CharacterSelect.css";
 import Loading from "./Loading";
 import CharacterImg from "./CharacterImg";
 
+function randomChar(chars)
+{
+    return chars[Math.floor(Math.random()*chars.length)];
+}
+
 function CharacterSelectEnemy({chars, time}) {
 
-  function randomChar()
-  {
-      return chars[Math.floor(Math.random()*chars.length)];
-  }
-
-  const rand = randomChar();
+  const rand = randomChar(chars);
 
   return (
     <div className="char-wrapper">

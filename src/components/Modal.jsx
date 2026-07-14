@@ -1,8 +1,9 @@
 import Button from "./Button";
 import ModeCard from "./ModeCard";
+import { Link } from "react-router";
 import "./Modal.css";
 
-export default function Modal({ onClose, setView }) {
+export default function Modal({ onClose }) {
   return (
     <div className="modal-overlay">
       <div className="modal-window">
@@ -13,7 +14,7 @@ export default function Modal({ onClose, setView }) {
 
           <ModeCard title="Ultimate"></ModeCard>
           <ModeCard title="Half‑Ultimate"></ModeCard>
-          <ModeCard title="Classic" setView={setView}></ModeCard>
+          <Link to="classic"><ModeCard title="Classic"></ModeCard></Link>
 
         </div>
 
